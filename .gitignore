@@ -11,10 +11,6 @@ venv/
 spark-warehouse/
 *.log
 
-# Data
-data/
-models/
-
 # Notebooks
 .ipynb_checkpoints/
 
