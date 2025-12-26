@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.venv/
+
+# Spark
+spark-warehouse/
+*.log
+
+# Data
+data/
+models/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+

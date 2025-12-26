@@ -1,0 +1,27 @@
+1:
+
+python -m src.preprocess_1m --data-path data
+
+2:
+
+python -m src.train_als --data-path data --model-out models/als_1m --rank 20 --reg 0.05 --maxIter 10
+
+3:
+
+python -m src.evaluate_als --data-path data --model-path models/als_1m
+
+4:
+
+python -m src.recommend_als --data-path data --model-path models/als_1m --user-id 100 --top-n 10
+
+5:
+
+python -m src.item_based_cf --data-path data --user-id 100 --top-n 10 --k 20
+
+6:
+
+python -m src.user_based_cf --data-path data --user-id 100 --top-n 10 --k 20
+
+7:
+
+python -m src.evaluate_all_models --data-path data --model-path models/als_1m --k 10 --num-users 20
